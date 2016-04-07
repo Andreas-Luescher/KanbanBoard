@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Site Properties -->
+        <title>Workshop</title>
+
+        <link rel="stylesheet" type="text/css" href="dist/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+
+        <script src="assets/library/jquery.min.js"></script>
+        <script src="dist/semantic.min.js"></script>
+
+        <script>
+
+            $(document).ready(function () {
+
+                $('.board-item').click(function () {
+                    window.document.location = $(this).data('href');
+                });
+
+                $('.button.addBoard').click(function () {
+                    $('.modal.addBoard').modal('show');
+                });
+
+            });
+
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <div class="ui main menu">
+            <div class="ui container">
+                <a href="index.html" class="header item">
+                    <img class="logo" src="assets/images/logo.png">
+                    Workshop
+                </a>
+                <a href="index.html" class="item active">Projektübersicht</a>
+                <a href="board.html" class="item">Projektdetails</a>
+                <div class="ui simple right floated dropdown item">
+                    Raphael Bolliger <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a class="item" href="#">Einstellungen</a>
+                        <a class="item" href="#">FAQ</a>
+                        <a class="item" href="#">Abmelden</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui main container">
+
+            <div class="ui segments">
+
+                <div class="ui segment">
+                    <div class="ui column padded grid">
+                        <div class="row">
+                            <div class="column">
+                                <h2>Projektübersicht</h2>
+                                <p>
+                                    Hier hast du einen überblick über deine Projekte und in denen du Mitglied bist. Du
+                                    kannst diene eigenen Boards hier ebenfalls verwalten.
+                                </p>
+                                <button class="large ui primary labeled icon button addBoard">
+                                    <i class="plus icon"></i>
+                                    Projekt erstellen
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="ui padded segment">
+
+                    <table class="ui large lined selectable table">
+
+                        <thead>
+                            <tr>
+                                <th class="ten wide">
+                                    Bezeichnung
+                                </th>
+                                <th class="two wide center aligned">
+                                    Tasks
+                                </th>
+                                <th class="two wide center aligned">
+                                    Mitglieder
+                                </th>
+                                <th class="four wide center aligned">
+                                    &nbsp;
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr class="positive">
+                                <td colspan="4">
+                                    <strong>Meine Projekte</strong>
+                                </td>
+                            </tr>
+
+                            <tr class="board-item" data-href="board.html">
+                                <td><strong>Umsetzung Workshop (6Iv)</strong><br>
+                                    <small>Im Workshop Distributed Software Systems an der Fachhochschule
+                                        Nordwestschweiz wird ein
+                                        Taskverwaltungs-Tool umgesetzt das aus einer Mischung von Trello und einem
+                                        Kanban-Board
+                                        besteht. Dieses Board hilft zur Planung der einzelnen Tasks.
+                                    </small>
+                                </td>
+                                <td class="center aligned">2</td>
+                                <td class="center aligned">15</td>
+                                <td class="center aligned">
+                                    <div class="ui tiny vertical buttons">
+                                        <button class="ui labeled icon button">
+                                            <i class="pencil icon"></i>
+                                            Bearbeiten
+                                        </button>
+                                        <button class="ui labeled icon button">
+                                            <i class="close icon"></i>
+                                            Löschen
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="board-item" data-href="board.html">
+                                <td><strong>Titel</strong><br>
+                                    <small>Das ist die Beschreibung.</small>
+                                </td>
+                                <td class="center aligned">2</td>
+                                <td class="center aligned">15</td>
+                                <td class="center aligned">
+                                    <div class="ui tiny vertical buttons">
+                                        <button class="ui green labeled icon button">
+                                            <i class="pencil icon"></i>
+                                            Bearbeiten
+                                        </button>
+                                        <button class="ui red labeled icon button">
+                                            <i class="close icon"></i>
+                                            Löschen
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="board-item" data-href="board.html">
+                                <td><strong>Titel</strong><br>
+                                    <small>Das ist die Beschreibung.</small>
+                                </td>
+                                <td class="center aligned">2</td>
+                                <td class="center aligned">15</td>
+                                <td class="center aligned">
+                                    <div class="ui tiny vertical buttons">
+                                        <button class="ui green labeled icon button">
+                                            <i class="pencil icon"></i>
+                                            Bearbeiten
+                                        </button>
+                                        <button class="ui red labeled icon button">
+                                            <i class="close icon"></i>
+                                            Löschen
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+
+
+                            <tr class="warning">
+                                <td colspan="4">
+                                    <strong>Mitgliedschaften</strong>
+                                </td>
+                            </tr>
+
+                            <tr class="board-item" data-href="board.html">
+                                <td><strong>Titel</strong><br>
+                                    <small>Das ist die Beschreibung.</small>
+                                </td>
+                                <td class="center aligned">2</td>
+                                <td class="center aligned">15</td>
+                                <td class="center aligned">
+                                </td>
+                            </tr>
+
+                            <tr class="board-item" data-href="board.html">
+                                <td><strong>Titel</strong><br>
+                                    <small>Das ist die Beschreibung.</small>
+                                </td>
+                                <td class="center aligned">2</td>
+                                <td class="center aligned">15</td>
+                                <td class="center aligned">
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                        <tfoot>
+                            <tr>
+                                <th class="ten wide">
+                                    Bezeichnung
+                                </th>
+                                <th class="two wide center aligned">
+                                    Tasks
+                                </th>
+                                <th class="two wide center aligned">
+                                    Mitglieder
+                                </th>
+                                <th class="four wide center aligned">
+                                    &nbsp;
+                                </th>
+                            </tr>
+
+                        </tfoot>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ui small modal addBoard">
+            <div class="header">
+                Projekt erstellen
+            </div>
+            <div class="content">
+                <div class="ui form">
+                    <div class="field">
+                        <label>Titel</label>
+                        <input type="text" placeholder="Titel">
+                    </div>
+                    <div class="field">
+                        <label>Beschreibung</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="ui cancel button">Abbrechen</div>
+                <div class="ui primary button">Erstellen</div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

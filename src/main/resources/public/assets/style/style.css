@@ -1,0 +1,28 @@
+body {
+	background-color: #f3f3f4;
+}
+
+.board-column {
+	background-color: white !important;
+}
+
+.task-segment {
+	background-color: #f3f3f4 !important;
+}
+
+.ui.menu .item img.logo {
+	margin-right: 1.5em;
+}
+
+.popupadduser {
+	float: right;
+	color: #4183c4;
+}
+
+.popupadduser:hover {
+	cursor: pointer;
+}
+
+.board-item:hover {
+	cursor: pointer;
+}
